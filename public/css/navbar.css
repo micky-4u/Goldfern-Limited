@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    height: 60px;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.0);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}
+
+.logoSpace{
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    height: 100%;
+    
+}
+
+.logoSpace div{
+    height: inherit;
+}
+
+.logoSpace div img{
+    height: 100%;
+}
+
+
+header nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+
+}
+
+header nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    z-index: 9999;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style-type: none;
+    color: #fff;
+
+}
+
+header nav ul li a{
+    text-decoration: none;
+    outline: none;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+
+
+}
+
+.user{
+
+}
+

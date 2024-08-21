@@ -1,0 +1,51 @@
+:root {
+    --secondary-color: #ffc800;
+    --headings-font-size: 30px;
+    --headings-font-weight: 500;
+    --headings-text-align: center;
+
+
+
+}
+
+.cat{
+    display: flex;
+    justify-content:flex-end;
+    height: 350px;
+    width: 200px;
+    background-color: #000;
+    border-radius: 25px;
+    background-image: url("../images/img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap:10px;
+    position: relative;
+}
+
+.arrow{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute; 
+    background-color: #ffc800;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+.arrow span{
+    cursor: pointer;
+    transform: rotate(315deg);
+
+}
+.label{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    color:#fff
+}
