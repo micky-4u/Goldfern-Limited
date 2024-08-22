@@ -1,38 +1,32 @@
-<div class ="cat">
+<div class="project">
     <div class="arrow">
         <span class="material-symbols-outlined">
             arrow_right_alt
         </span>
     </div>
-
     <div class="label">
         <p>Luxury</p>
     </div>
-    
 </div>
 
-<div class ="cat">
+<div class="project">
     <div class="arrow">
         <span class="material-symbols-outlined">
             arrow_right_alt
         </span>
     </div>
-
     <div class="label">
         <p>Luxury</p>
     </div>
-    
 </div>
 
-<div class ="cat">
+<div class="project">
     <div class="arrow">
         <span class="material-symbols-outlined">
             arrow_right_alt
         </span>
     </div>
-
     <div class="label">
         <p>Luxury</p>
     </div>
-    
 </div>

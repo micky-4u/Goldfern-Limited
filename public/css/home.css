@@ -65,7 +65,7 @@
     color: #fff;
 }
 
-.goodnote, .projects{
+.goodnote,  .projects{
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -78,11 +78,12 @@
     text-align: var(--headings-text-align);
 }
 
-.categories{
+.categories, .project-area{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     width: 100vw;
+    gap:40px
 }
 

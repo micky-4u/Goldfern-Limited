@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="public/css/navbar.css">
     <link rel="stylesheet" href="public/css/article.css">
+    <link rel="stylesheet" href="public/css/footer.css">
     <link rel="stylesheet" href="public/css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,15 +49,25 @@
     <div class="goodnote">
         <p class ="title">Experience elegantly designed and uniquely crafted high-quality apartments.</p>
     </div>
+
     <div class="categories">
         <?php
             include("app/components/category.php");
         ?>
     </div>
-    <div class="projects">
-        <div>
-            <p class = "title">Recent Projects</p>
-        </div>
+
+    <div>
+        <p class = "title">Recent Projects</p>
+    </div>
+    <div class ="project-area">
+            <?php
+                include("app/components/projects.php")
+            ?>
+    </div>
+    <div class="footer">
+        <?php
+            include("app/components/footer.php");
+        ?>
     </div>
 </body>
 </html>
