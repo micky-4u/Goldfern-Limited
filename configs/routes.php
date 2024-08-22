@@ -1,18 +1,21 @@
 <?php
 
-$get_request_url = $_SERVER['REQUEST_URI'];
-$split_uri = explode("/",$get_request_url);
-$request_uri = $split_uri[1];
+$routes = [
+    '/goldfern/' => 'app/views/visit.php',
+    '/goldfern/about' => 'app/views/about.php',
+    '/goldfern/contact' => 'app/views/contact.php',
+];
 
-if($request_uri ==null || $request_uri =="goldfern"){
-    require_once "app/views/home.php";
-} else{
-    switch($request_uri){
+function handleRequest($routes) {
+    $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-        case "goldfern/properties":
-            require_once "../app/views/properties.php";
-            break;
+    if (array_key_exists($uri, $routes)) {
+        require $routes[$uri];
+    } else {
+        require 'app/views/404.php'; // Custom 404 page
     }
 }
+
+handleRequest($routes);
 
 ?>

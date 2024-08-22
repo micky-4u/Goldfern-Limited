@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="public/css/navbar.css">
     <link rel="stylesheet" href="public/css/article.css">
     <link rel="stylesheet" href="public/css/footer.css">
-    <link rel="stylesheet" href="public/css/home.css">
+    <link rel="stylesheet" href="public/css/core.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +22,10 @@
     <!-- desktop version -->
     <div class="landing">
         <?php
-            include("app/components/header.php");
+            include 'app/components/header.php';
         ?>
+        <div class="overlay"></div>
 
-        <div class="cover">
-        </div>
 
         <div class="content">
             <div>

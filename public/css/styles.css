@@ -1,11 +1,10 @@
-:root {
-    --secondary-color: #e4e41d;
 
-}
 body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     /* font-weight: <weight; */
     font-style: normal;
-
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
 }

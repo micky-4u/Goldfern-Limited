@@ -21,14 +21,28 @@
 <body>
 
     <!-- desktop version -->
-    <div class="landing">
+    <div style ="position:relative; height:50px;">
         <?php
             include("app/components/header.php");
         ?>
-        <div class="overlay">
-
         </div>
 
+        <div class="visit-content">
+            <div>
+                <h1>
+                The MaGrip House
+                </h1>
+
+                <p>Fast Growing Real Estate Company <br>that builds high earned properties at affordable prices.</p>
+                <hr>
+            </div>
+            <div>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
     <div class="footer">
         <?php
             include("app/components/footer.php");
