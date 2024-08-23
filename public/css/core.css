@@ -11,9 +11,10 @@
 
 .landing{
     position: relative;
-    width: 100%;
-    height: 450px;
-    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    overflow: hidden;
 }
 
 .overlay {
@@ -42,16 +43,21 @@
     background-size: cover; 
     background-position: center;
 }
-
-.content{
+.content, .content-prop{
     margin-left: 30px;
     position: absolute;
     height: inherit;
     display: flex;
     align-items: center;
-    z-index: 99999;
+    
 }
-.content div p{
+
+.content-prop{
+    width: 100%;
+    justify-content: center;
+}
+
+.content div p, .content-prop div p{
     color:#fff;
     font-weight: 200;
     margin: 0;
@@ -59,13 +65,13 @@
 
 }
 
-.content div h1{
+.content div h1, .content-prop div h1{
     color: var(--secondary-color);
     font-size: 50px;
     margin: 0;
     padding: 0;
 }
-.content div h1 span{
+.content div h1 span, .content-prop div h1 span{
     color: #fff;
 }
 
@@ -80,6 +86,7 @@
     font-size: var(--headings-font-size);
     font-weight: var(--headings-font-weight);
     text-align: var(--headings-text-align);
+    margin-top: 100px;
 }
 
 .categories, .project-area{
@@ -92,63 +99,179 @@
 }
 
 .prop-info{
-    height: 550px;
-    width: inherit;
+    margin-top: 30px;
+    height: 400px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin: none;
-}
+    margin-top: 50px;
+    animation: appear 1s ease;
+    padding: 20px 0 20px 0;
 
-.img-area, .text-area{
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.img-area img{
-    height: 500px;
-    width: 500px;
-    object-fit: fill
-    ;
-    /* overflow: hidden; */
-    background-size: cover; 
-    background-position: center;
-    border-radius: 20px;
-
-}
-
-.text-area{
-    align-items: flex-start;
-    text-align: left;
-    flex-direction: column;
-    /* transition: transform 1s ease-in-out; */
-
+    & a:nth-child(1){
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        width: 100%;
+    }
+    & a:nth-child(2){
+        display: none;
+    }
     & button{
       background-color: #ffc800;
       color: #000;  
       outline: none;
       border: none;
       height: 40px;
-      width:  80px;
+      width:  100%;
       border-radius: 5px;
       cursor: pointer;
     }
 
-      & div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap:10px;
-      }
 
+}
+
+/* .room-spec {
+    display: flex;
+    background-color: red;
+    width: 50%;
+
+
+    & h2{
+        margin: 0;
+    }
+    & p{
+        margin: 0;
+    }
+} */
+
+/* .room-spec div{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    
+} */
+
+.img-area, .text-area{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img-area{
+    width: 40%;
+}
+
+.img-area img{
+    position:absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: fill
+
+    ;
+    /* overflow: hidden; */
+    background-size: cover; 
+    background-position: center;
+    border-radius: 20px;
+
+
+}
+
+.text-area{
+    border-radius: 20px;
+    display: flex;
+    width:40%;
+    /* position: relative; */
+    right: 0;
+    top: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+
+    /* transition: transform 1s ease-in-out; */
+    & h1, h2{
+        margin: 0;
+        
+    }
+    & h4{
+        margin: 20px;
+    }
+    & A{
+        margin: 20PX;
+        width: 105px;
+    }
+    & p{
+        margin: 0;
+       
     }
 
+        & p{
+
+        }
+    }
+
+.room-spec{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:10px;
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+
+.location{
+    display: flex;
+    margin: 70px 0 50px 20px;
+}
 .visit-content{
     position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 50p;
 }
+
+.app-sections{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & div{
+        height: 400px;
+        width:400px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    
+    }
+
+    & div img{
+        background-position: center;
+        background-size: center;
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+.agents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+    
+    & div{
+    }
+}
+
+

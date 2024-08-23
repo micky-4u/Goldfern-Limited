@@ -28,6 +28,10 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+.app-content h1{
+    color:#fff;
+}
+
 /* Style for the image */
 .slide img {
     vertical-align: middle;

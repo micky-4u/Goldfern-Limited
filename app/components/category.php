@@ -1,9 +1,7 @@
 <div class ="cat">
-    <div class="arrow">
-        <span class="material-symbols-outlined">
-            arrow_right_alt
-        </span>
-    </div>
+<img src="public/images/prop3/img1.jpg" alt="">
+
+   
 
     <div class="label">
         <p>Luxury</p>
@@ -12,27 +10,19 @@
 </div>
 
 <div class ="cat">
-    <div class="arrow">
-        <span class="material-symbols-outlined">
-            arrow_right_alt
-        </span>
-    </div>
+    <img src="public/images/prop1/img1.jpg" alt="">
 
     <div class="label">
-        <p>Luxury</p>
+        <p>Family</p>
     </div>
     
 </div>
 
 <div class ="cat">
-    <div class="arrow">
-        <span class="material-symbols-outlined">
-            arrow_right_alt
-        </span>
-    </div>
+<img src="public/images/prop2/img1.jpg" alt="">
 
     <div class="label">
-        <p>Luxury</p>
+        <p>Vacation</p>
     </div>
     
 </div>

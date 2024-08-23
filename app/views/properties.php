@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- <meta http-equiv="refresh" content="3">  -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/styles.css">
-    <link rel="stylesheet" href="public/css/navbar.css">
-    <link rel="stylesheet" href="public/css/article.css">
-    <link rel="stylesheet" href="public/css/footer.css">
-    <link rel="stylesheet" href="public/css/core.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <title>Document</title>
-</head>
+<?php
+    include("app/views/base.php");
+?>
 <body>
+    <?php
+        require("database/api/properties.php");
+    ?>
 
     <!-- desktop version -->
     <div class="landing">
@@ -29,12 +15,12 @@
 
         </div>
 
-        <div class="content">
+        <div class="content-prop">
             <div>
                 <h1>
-                    Goldfern <span>Properties</span>
+                    Our <span>Properties</span>
                 </h1>
-                <p>Fast Growing Real Estate Company <br>that builds high earned properties at affordable prices.</p>
+                <p></p>
                 <hr>
             </div>
             <div>
@@ -43,36 +29,78 @@
 
 
         <div class ="viewImage">
-            <img src="public/images/img2.jpg" alt="image view">
+            <img src="public/images/prop1/img1.jpg" alt="image view">
         </div>
     </div>
-    <div class="prop-info">
-            <div class="img-area">
-                <img src="public/images/prop1/img14.jpg" alt="">
-            </div>
-            <div class="text-area">
-                <h1>
-                    The MaGrip House
-                </h1>
-                <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                </p>
-                <div>
-                    <span class="material-symbols-outlined">
-                        location_on
-                    </span>
 
-                    <p>Roman - Ridgh Accra</p>
-                </div>
-                <h4>
-                    $50000.00 
-                </h2>
-                <button>
-                    Visit
-                </button>
-            </div>
-    </div>
+    <?php if (count($property) > 0): ?>
+        <?php foreach ($property as $prop): ?>
+            <div class="prop-info">
+                    <div class="img-area">
+                        <img src=" <?php echo htmlspecialchars($prop['dir_path']); ?>/img1.jpg" alt="">
+                        <a href="visit?id=<?php echo htmlspecialchars($prop['id']);?>">
 
+                            <button>
+                                Visit
+                            </button>
+                        </a>
+                    </div>
+                    <div class="text-area">
+                        <h1 style ="margin:0 0 0 20px">
+                            <?php echo ucwords(htmlspecialchars($prop['name'])); ?>
+                        </h1>
+                        <div class ="location">
+                            <span class="material-symbols-outlined">
+                                location_on   
+                            </span>
+
+                            <p><?php echo ucwords(htmlspecialchars($prop['location'])); ?> - Accra</p>
+                        </div>
+                        <div class = "room-spec">
+                            <div>
+                                <h2>
+                                    4
+                                </h2>
+                                <p>
+                                    beds
+                                </p>
+                            </div>
+                            <div>
+                                <h2>
+                                    6
+                                </h2>
+                                <p>
+                                    baths
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>
+                                    1367
+                                </h2>
+                                <p>
+                                    sqrt
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        <p style ="margin:20px">
+                        Price from:
+                        <span style ="font-weight:700;">$<?php echo ucwords(htmlspecialchars($prop['price'])); ?>.00</span>
+                        </p>
+                        <a href="visit?id=<?php echo htmlspecialchars($prop['id']);?>">
+
+                            <button>
+                                Visit
+                            </button>
+                        </a>
+                    </div>
+            </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p>No properties found.</p>
+        <?php endif; ?>
     <div class="footer">
         <?php
             include("app/components/footer.php");

@@ -1,0 +1,117 @@
+/* mobile */
+@media (max-width:600px){
+    header nav{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+    .prop-info{
+        position: relative;
+        flex-direction: column-reverse;
+        height:300px ;
+
+        & a:nth-child(2){
+            position: absolute;
+            display: block;
+            right: 20px;
+            bottom: 30px;
+            width: 80px;
+        }
+
+        & a{
+            display: none;
+        }
+
+    }
+
+
+    .img-area, .slide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 200px;
+
+        & img{
+            width: 80%;
+            position: relative;
+            object-fit: cover;
+        }
+
+        
+    }
+
+    .text-area{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        & h4{
+            display: none;
+        }
+
+
+        & span{
+            display: none;
+        }
+        & h1{
+            font-size: 20px;
+        }
+       & p{
+            display: none;
+            text-align: center;
+            
+        }
+
+        & div p{
+            display: none;
+        }
+     }
+    .location{
+        display: none;
+    }
+
+
+    .room-spec{
+        display:none;
+    }
+
+     .slide {
+        & h1{
+            display: none;
+        }
+        & img{
+            border-radius: 20px;
+        }
+     }
+     .app-content{
+        display:none;
+     }
+     .visit-content{
+
+        & h1{
+            font-size: 25px;
+        }
+     }
+}
+
+
+/* Table devices  */
+@media (min-width:601px) and (max-width:768px){
+    body{
+        width:100vw;
+    }
+    header nav{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+
+
+}

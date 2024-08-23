@@ -6,8 +6,8 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    position: absolute;
-    z-index: 999999;
+    position: relative;
+    z-index: 1;
 }
 
 .logoSpace{
@@ -16,6 +16,14 @@ header {
     z-index: 9999;
     height: 100%;
     
+}
+
+.menu{
+    position: absolute;
+    right: 20px;
+    color: #ffffff;
+    z-index: 1;
+    display: none;
 }
 
 .logoSpace div{
@@ -59,7 +67,4 @@ header nav ul li a{
 
 }
 
-.user{
-
-}
 
