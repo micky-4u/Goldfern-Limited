@@ -36,9 +36,51 @@
             <div class="slide fade">
                 <img src="<?php echo htmlspecialchars($property['dir_path']); ?>/img2.jpg" alt="">
                 <div class ="app-content">
-                    <h1>3 Bedroom Apartments</h1>
+                    <h1>Apartment info</h1>
+                    <div style = "color:#fff">
+                            <div>
+                                <h2>
+                                    4
+                                </h2>
+                                <p>
+                                    beds
+                                </p>
+                            </div>
+                            <div>
+                                <h2>
+                                    6
+                                </h2>
+                                <p>
+                                    baths
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>
+                                    1367
+                                </h2>
+                                <p>
+                                    sqrt
+                                </p>
+                            </div>
+                            <div>
+                                <h2>
+                                $ <?php echo htmlspecialchars($property['price']); ?>.00
+                                </h2>
+                                
+                            </div>
+
+                        </div>
                 </div>
             </div>
+    </div>
+    <div class ="title">
+        <p>Architectural Ingenuity</p>
+    </div>
+    <div class = "brief">
+        <p>The property is designed to balance aesthetics, functionality, and sustainability. The concept focuses on open-plan living spaces, maximizing natural light, and integrating indoor and outdoor living.
+        Modern, with clean lines, minimalistic features, and the use of natural materials like wood and stone. The design also incorporates energy-efficient elements, such as solar panels and insulated windows
+        </p>
     </div>
     <div class ="app-sections">
         <div>

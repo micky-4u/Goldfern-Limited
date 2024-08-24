@@ -16,7 +16,7 @@ switch ($uri) {
         include 'app/views/home.php';
         break;
     
-    case 'about':
+    case 'goldfern/about':
         // Example: Load about page
         include 'app/views/about.php';
         break;

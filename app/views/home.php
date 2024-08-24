@@ -62,5 +62,6 @@
             include("app/components/footer.php");
         ?>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

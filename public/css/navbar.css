@@ -21,7 +21,7 @@ header {
 .menu{
     position: absolute;
     right: 20px;
-    color: #ffffff;
+    color: #ffc800;
     z-index: 1;
     display: none;
 }
@@ -65,6 +65,9 @@ header nav ul li a{
     cursor: pointer;
 
 
+}
+#close{
+    display: none;
 }
 
 

@@ -98,6 +98,48 @@
             font-size: 25px;
         }
      }
+
+     .footer-div{
+        height: 150px;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .user{
+        display: none;
+     }
+
+
+     .menu-items{
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 200vh;
+        background-color: #000;
+        width: 40% ;
+        color:#fff;
+        z-index: 9999999;
+        transition: 2s ease;
+        transform: translateX(240px);
+
+        & ul li{
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        & ul li a{
+            text-decoration: none;
+            color: #ffc800;
+        }
+
+
+        
+     }
+
+     .nv-list{
+        display: flex;
+        z-index: 9999999;
+     }
 }
 
 
@@ -112,6 +154,11 @@
     .menu{
         display: flex;
     }
+
+    .user{
+        display: none;
+     }
+
 
 
 }

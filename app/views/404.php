@@ -1,11 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<?php
+    include("app/views/base.php");
+?>
 <body>
-    <p>404 page</p>
+
+    <!-- desktop version -->
+    <div class="landing">
+        <?php
+            include("app/components/header.php");
+        ?>
+            <h1>Page Not Found</h1>
+    <div class="footer">
+        <?php
+            include("app/components/footer.php");
+        ?>
+
+        
+    </div>
 </body>
 </html>

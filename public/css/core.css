@@ -244,8 +244,8 @@
     justify-content: center;
 
     & div{
-        height: 400px;
-        width:400px;
+        height: 300px;
+        width:300px;
         border-radius: 20px;
         overflow: hidden;
         position: relative;
@@ -272,6 +272,22 @@
     
     & div{
     }
+}
+.brief{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & p{
+        width: 60%;
+    }
+
+}
+
+.menu-items{
+    display:none;
 }
 
 
