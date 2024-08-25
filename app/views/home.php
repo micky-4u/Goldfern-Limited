@@ -43,7 +43,7 @@
     <div class = "title">
         <p >Connect With our top agents</p>
     </div>
-    <div class="div agents">
+    <div class="agents">
         <?php
             include("app/components/agent.php")
         ?>
@@ -61,7 +61,6 @@
         <?php
             include("app/components/footer.php");
         ?>
-    </div>
-    <script src="script.js"></script>
+    </div src="script.js"></script>
 </body>
 </html>

@@ -19,9 +19,6 @@
             <span id ="menu" onclick="showSide()" class="material-symbols-outlined">
                  menu
              </span>
-             <span id ="close" onclick="closeSide()" class="material-symbols-outlined">
-            close
-            </span>
 
     </div>
     <user class = "user">
@@ -32,7 +29,11 @@
     </user>
     
 </header>
+<div class ="hide-side" onclick="closeSide()"></div>
 <div class="menu-items">
+        <span id ="close" onclick="closeSide()" class="material-symbols-outlined">
+            close
+            </span>
         <ul>
             <li><a href="/goldfern">Home</a></li>
             <li><a href="properties">Properties</a></li>

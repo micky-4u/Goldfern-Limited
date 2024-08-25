@@ -72,8 +72,49 @@
 
                         </div>
                 </div>
+
             </div>
     </div>
+    <div class ="app-content1">
+                    <div class="div title">
+                        <p>Apartment info</p>
+
+                    </div>
+                    <div>
+                            <div>
+                                <h2>
+                                    4
+                                </h2>
+                                <p>
+                                    beds
+                                </p>
+                            </div>
+                            <div>
+                                <h2>
+                                    6
+                                </h2>
+                                <p>
+                                    baths
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2>
+                                    1367
+                                </h2>
+                                <p>
+                                    sqrt
+                                </p>
+                            </div>
+                            <div>
+                                <h2>
+                                $ <?php echo htmlspecialchars($property['price']); ?>.00
+                                </h2>
+                                
+                            </div>
+
+                        </div>
+                </div>
     <div class ="title">
         <p>Architectural Ingenuity</p>
     </div>
@@ -88,6 +129,10 @@
         </div>
 
     </div>
+    <div class ="title">
+        <p>Find Location on Map</p>
+    </div>
+    <div id="map"></div>
 
     <div class="footer">
         <?php
@@ -96,5 +141,11 @@
 
         
     </div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+    <script src ="public/js/index.js"></script>
+
 </body>
 </html>
