@@ -38,7 +38,11 @@
             Just contact us of all home solutions 
         </p>
     </div>
+    <div class = "title">
+        <p >Reach out to us</p>
+    </div>
 
+    <?php include("app/components/message.php");?>
 
     <div class="footer">
         <?php

@@ -7,6 +7,7 @@
     height: 250px;
     width: 100%;
     background-color: #000;
+    justify-content: space-around;
 }
 .user, .user-f{
     color:#ffc800 ;
@@ -30,3 +31,24 @@
 
 }
 
+.events, .menu-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu-area ul li{
+    margin-top: 10px;
+}
+
+.menu-area ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition:  0.5s ease;
+}
+
+.menu-area ul li a:hover{
+    color: #ffc800;
+    transition: 0.5 ease;
+}

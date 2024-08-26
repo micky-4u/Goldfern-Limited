@@ -57,9 +57,9 @@
                             <p><?php echo ucwords(htmlspecialchars($prop['location'])); ?> - Accra</p>
                         </div>
                         <div class = "room-spec">
-                            <div>
+                        <div>
                                 <h2>
-                                    4
+                                <?php echo htmlspecialchars($prop['beds']); ?>
                                 </h2>
                                 <p>
                                     beds
@@ -67,7 +67,7 @@
                             </div>
                             <div>
                                 <h2>
-                                    6
+                                <?php echo htmlspecialchars($prop['baths']); ?>
                                 </h2>
                                 <p>
                                     baths
@@ -76,7 +76,7 @@
 
                             <div>
                                 <h2>
-                                    1367
+                                <?php echo htmlspecialchars($prop['sqrt']); ?>
                                 </h2>
                                 <p>
                                     sqrt
@@ -101,6 +101,12 @@
         <?php else: ?>
             <p>No properties found.</p>
         <?php endif; ?>
+        <div class = "title">
+        <p >Reach out to us</p>
+    </div>
+
+        <?php include("app/components/message.php");?>
+
     <div class="footer">
         <?php
             include("app/components/footer.php");

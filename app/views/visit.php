@@ -6,11 +6,14 @@
     <?php  
                 require("database/api/properties.php");
 
+                $images = scandir(htmlspecialchars($property['dir_path']));
+
     ?>
     <!-- desktop version -->
     <div style ="position:relative; height:50px;">
         <?php
             include("app/components/header.php");
+
         ?>
     </div>
 
@@ -34,13 +37,13 @@
     </div>
     <div class ="slider-div">
             <div class="slide fade">
-                <img src="<?php echo htmlspecialchars($property['dir_path']); ?>/img2.jpg" alt="">
+                <img src="<?php echo htmlspecialchars($property['dir_path']); ?>/img1.jpg" alt="">
                 <div class ="app-content">
                     <h1>Apartment info</h1>
                     <div style = "color:#fff">
                             <div>
                                 <h2>
-                                    4
+                                <?php echo htmlspecialchars($property['beds']); ?>
                                 </h2>
                                 <p>
                                     beds
@@ -48,7 +51,7 @@
                             </div>
                             <div>
                                 <h2>
-                                    6
+                                <?php echo htmlspecialchars($property['baths']); ?>
                                 </h2>
                                 <p>
                                     baths
@@ -57,7 +60,7 @@
 
                             <div>
                                 <h2>
-                                    1367
+                                <?php echo htmlspecialchars($property['sqrt']); ?>
                                 </h2>
                                 <p>
                                     sqrt
@@ -81,9 +84,9 @@
 
                     </div>
                     <div>
-                            <div>
+                    <div>
                                 <h2>
-                                    4
+                                <?php echo htmlspecialchars($property['beds']); ?>
                                 </h2>
                                 <p>
                                     beds
@@ -91,7 +94,7 @@
                             </div>
                             <div>
                                 <h2>
-                                    6
+                                <?php echo htmlspecialchars($property['baths']); ?>
                                 </h2>
                                 <p>
                                     baths
@@ -100,7 +103,7 @@
 
                             <div>
                                 <h2>
-                                    1367
+                                <?php echo htmlspecialchars($property['sqrt']); ?>
                                 </h2>
                                 <p>
                                     sqrt
@@ -112,7 +115,6 @@
                                 </h2>
                                 
                             </div>
-
                         </div>
                 </div>
     <div class ="title">
@@ -123,10 +125,19 @@
         Modern, with clean lines, minimalistic features, and the use of natural materials like wood and stone. The design also incorporates energy-efficient elements, such as solar panels and insulated windows
         </p>
     </div>
+    <div class ="title">
+        <p>Gallery</p>
+    </div>
+
     <div class ="app-sections">
+        <?php  foreach ($images as $image): ?>
+
+            <?php if ($image !== '.' && $image !== '..'):?>
         <div>
-            <img src="public/images/prop3/img2.jpg" alt="">
+            <img src="<?php echo htmlspecialchars($property['dir_path']),"/", $image ;?>" alt="">
         </div>
+        <?php endif ?>
+    <?php endforeach?>
 
     </div>
     <div class ="title">

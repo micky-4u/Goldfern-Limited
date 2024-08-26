@@ -43,7 +43,7 @@
     <div class = "title">
         <p >Connect With our top agents</p>
     </div>
-    <div class="agents">
+    <div class="agents" id = "agents">
         <?php
             include("app/components/agent.php")
         ?>
@@ -57,6 +57,11 @@
                 include("app/components/projects.php")
             ?>
     </div>
+    <div class = "title">
+        <p >Reach out to us</p>
+    </div>
+
+    <?php include("app/components/message.php");?>
     <div class="footer">
         <?php
             include("app/components/footer.php");

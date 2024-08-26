@@ -1,5 +1,5 @@
 <div class ="cat">
-<img src="public/images/prop3/img1.jpg" alt="">
+<img src="public/images/lux.jpg" alt="">
 
    
 
@@ -10,7 +10,7 @@
 </div>
 
 <div class ="cat">
-    <img src="public/images/prop1/img1.jpg" alt="">
+    <img src="public/images/fam.jpg" alt="">
 
     <div class="label">
         <p>Family</p>
@@ -19,7 +19,7 @@
 </div>
 
 <div class ="cat">
-<img src="public/images/prop2/img1.jpg" alt="">
+<img src="public/images/vac.jpg" alt="">
 
     <div class="label">
         <p>Vacation</p>

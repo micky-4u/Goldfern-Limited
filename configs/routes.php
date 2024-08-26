@@ -37,7 +37,7 @@ switch ($uri) {
                 include 'app/views/visit.php';
                 break;
 
-            case 'goldferncontact':
+            case 'goldfern/contact':
                 // Example: Load contact page
                 include 'app/views/contact.php';
                 break;

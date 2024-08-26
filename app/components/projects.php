@@ -1,22 +1,40 @@
-<div class="project">
-    <img src="public/images/prop1/img1.jpg" alt="">
+<?php 
+    require("database/api/properties.php");
+    $count = 0
+    ?>
+
+<?php foreach ($property as $prop): ?>
+    <div class="project">
+    <img src="<?php echo htmlspecialchars($prop['dir_path']) ?>/img1.jpg" alt="">
     <div class="arrow">
+    <a href="visit?id= <?php echo htmlspecialchars($prop['id']) ?>">          
         <span class="material-symbols-outlined">
             arrow_right_alt
         </span>
+    </a>
     </div>
     <div class="label">
-        <p>3 Bedroom Apartment</p>
+        <p><?php echo htmlspecialchars($prop['beds']) ?> Bedroom Apartment</p>
         <div>
         <span class="material-symbols-outlined">
                         location_on
         </span>
         <p>
-            East Legon
+        <?php echo htmlspecialchars($prop['location']) ?>
         </p>
 
 
         </div>
     </div>
 </div>
+ <?php
+
+ $count++;
+
+ if ($count == 3){
+    break;
+ }
+
+ ?>
+<?php endforeach?>
 

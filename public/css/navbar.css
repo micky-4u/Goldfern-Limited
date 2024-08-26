@@ -6,8 +6,9 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
 }
 
 .logoSpace{
@@ -55,6 +56,14 @@ header nav ul li{
     list-style-type: none;
     color: #fff;
 
+}
+header nav ul li a:active{
+    color:#ffc800
+}
+
+header nav ul li a:hover{
+    color: #ffc800;
+    transition: 0.3s ease;
 }
 
 header nav ul li a{
