@@ -186,6 +186,13 @@
         }
 
      }
+     .menu-area{
+        display: none;
+
+     }
+     .events{
+        padding-bottom: 10px;
+     }
 
      .hide-side{
         display: flex;
